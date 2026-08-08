@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #24211f;
+  --color-muted: #766f6a;
+  --color-canvas: #fff8f3;
+  --color-surface: #ffffff;
+  --color-brand: #df5d45;
+  --color-brand-dark: #b94331;
+  --color-accent: #f5c869;
+  --color-success: #519c78;
+  --radius-card: 1.25rem;
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+  body { @apply m-0 min-w-80 bg-canvas font-sans text-ink antialiased; }
+  button, input, textarea, select { font: inherit; }
+}
