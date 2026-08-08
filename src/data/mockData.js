@@ -27,3 +27,21 @@ export const recentActivity = [
 export const firstDayState = { days: 0, best: 0, status: 'new', message: 'Your first small action starts a new streak.' }
 export const missedDayState = { days: 0, best: 11, status: 'broken', message: 'A missed day is a pause, not the end. Start again today.' }
 export const emptyProfileState = { id: null, name: '', handle: '', cohort: '', avatar: null, joinedAt: null }
+
+// Landing-page community proof. Kept local so the first experience stays fast and clear.
+export const landingCommunity = {
+  activeStudents: 2847,
+  colleges: 86,
+  buildsThisWeek: 613,
+  students: [
+    { name: 'Sana Khan', college: 'MITS, Gwalior', initials: 'SK', build: 'Expense tracker', day: 28, color: 'bg-violet-500' },
+    { name: 'Aditya Nair', college: 'NIT Calicut', initials: 'AN', build: 'Campus bus finder', day: 41, color: 'bg-sky-500' },
+    { name: 'Priya Verma', college: 'VIT Chennai', initials: 'PV', build: 'Study buddy app', day: 16, color: 'bg-amber-500' },
+  ],
+}
+
+export const starterPlan = [
+  { time: '2 min', title: 'Pick your track', detail: 'Web, mobile, AI, or your own idea.' },
+  { time: '15 min', title: 'Ship a tiny first build', detail: 'A README, a UI, or a working feature counts.' },
+  { time: '3 min', title: 'Share the proof', detail: 'Commit it on GitHub and tell your learning story.' },
+]
