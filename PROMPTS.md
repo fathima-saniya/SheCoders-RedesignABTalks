@@ -192,3 +192,165 @@ At the end, briefly report:
 Do not build the Dashboard or Challenge Day in this task.
 
 **Result:** Landing page completed and tested at 390px mobile width.
+
+### Prompt 3 — Student Dashboard
+
+Continue developing the existing ABTalks Reimagined project.
+
+First inspect the existing implementation and preserve the current design system and components.
+
+IMPORTANT:
+- Do not rebuild the project from scratch.
+- Do not delete or overwrite PROMPTS.md.
+- Preserve the completed Landing Page.
+- Do not modify the Landing Page unnecessarily.
+- Build ONLY the Student Dashboard in this task.
+- Do not build the Challenge Day page yet.
+- Do not add authentication, backend, database, or real APIs.
+- Use realistic mocked student data.
+
+Required route:
+
+/dashboard
+
+CONTEXT:
+
+The Student Dashboard is the home screen after a student starts the ABTalks 60-day coding challenge.
+
+The dashboard should make the student immediately understand:
+- where they are in the challenge
+- what they need to do today
+- their current streak
+- their overall progress
+- how they are performing
+- what they have achieved
+
+PRIMARY VIEWPORT:
+
+The judging viewport is 390px wide.
+
+Design mobile-first and optimize the dashboard specifically for a 390px phone.
+
+DASHBOARD MUST INCLUDE:
+
+1. Student greeting/header
+   - Use a realistic mock student profile.
+   - Include a small profile/avatar treatment.
+   - Do not require authentication.
+
+2. Current streak
+   - Clearly show the current streak.
+   - Example: 12 days.
+   - Make this visually important.
+   - Show encouraging supporting text.
+
+3. Today's task
+   - Clearly identify today's challenge.
+   - Show the task title.
+   - Briefly explain what needs to be built.
+   - Include a clear CTA to continue to the challenge day.
+
+4. Challenge progress
+   - Show the current day out of 60.
+   - Include a visually clear progress indicator.
+   - Make progress understandable at a glance.
+
+5. Overall completion
+   - Show a meaningful completion percentage or progress visualization.
+   - Ensure the number is consistent with the mocked challenge progress.
+
+6. Student standing / achievements
+   - Show realistic achievements, milestones, or standing.
+   - Example:
+     - current rank/percentile
+     - badges
+     - milestones
+   - Keep this useful rather than decorative.
+
+7. Recent activity / proof
+   - Show a small realistic history of recent submissions.
+   - Indicate GitHub and LinkedIn proof where appropriate.
+
+8. Missed-day awareness
+   - Include a realistic way the dashboard can communicate that a student missed a day.
+   - Do not make it feel punishing.
+   - The interface should encourage the student to continue.
+
+9. Navigation
+   - Provide clear navigation to the Landing Page and Challenge Day where appropriate.
+   - Use the existing router.
+
+PRODUCT THINKING:
+
+The dashboard should answer these questions within a few seconds:
+
+"Where am I?"
+"What do I need to do today?"
+"Am I keeping my streak?"
+"How much have I completed?"
+"Am I making progress?"
+
+Make the hierarchy reflect these priorities.
+
+DESIGN:
+
+- Mobile-first
+- Excellent 390px experience
+- Premium but approachable
+- Designed for college students
+- Strong typography hierarchy
+- Clear spacing
+- Good tap targets
+- Accessible contrast
+- Consistent with the Landing Page
+- Use purposeful visual feedback
+- Avoid excessive cards
+- Avoid generic dashboard templates
+- Avoid information overload
+- Make the most important information visible without excessive scrolling
+
+MOCK DATA:
+
+Create/use local mock data only.
+
+Use internally consistent values.
+
+For example, if the student is on Day 12 of 60, the progress indicator should reflect that.
+
+Do not connect to real GitHub or LinkedIn APIs.
+
+INTERACTIONS:
+
+- Today's task CTA should navigate to `/day/12`.
+- Navigation should work.
+- Buttons should not be dead/placeholder interactions.
+- If an interaction is not implemented, don't present it as a working feature.
+
+RESPONSIVE BEHAVIOR:
+
+- Optimize for 390px first.
+- Ensure no horizontal overflow.
+- Make the layout responsive for larger screens.
+- Do not sacrifice the mobile experience for desktop.
+
+AFTER IMPLEMENTATION:
+
+1. Run the application.
+2. Test `/dashboard`.
+3. Test at approximately 390px width.
+4. Check for horizontal overflow.
+5. Check all navigation and CTA interactions.
+6. Make sure the existing `/` Landing Page still works.
+7. Make sure `/day/12` still loads.
+8. Fix compilation and runtime errors.
+9. Do not unnecessarily modify unrelated files.
+
+At the end, briefly report:
+- Files changed
+- Dashboard features implemented
+- Whether `/dashboard` works at 390px
+- Any issues remaining
+
+Do not build `/day/12` in this task.
+
+**Result:** Student Dashboard completed and tested at 390px mobile width.
