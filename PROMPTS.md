@@ -354,3 +354,215 @@ At the end, briefly report:
 Do not build `/day/12` in this task.
 
 **Result:** Student Dashboard completed and tested at 390px mobile width.
+
+## Prompt 4 — Challenge Day
+
+Continue developing the existing ABTalks Reimagined project.
+
+First inspect the existing codebase and understand the current implementation.
+
+IMPORTANT:
+- Do not rebuild the project from scratch.
+- Do not delete or overwrite PROMPTS.md.
+- Preserve the completed Landing Page and Student Dashboard.
+- Do not unnecessarily modify `/` or `/dashboard`.
+- Build ONLY the Challenge Day experience in this task.
+- Do not add authentication, backend, database, or real GitHub/LinkedIn APIs.
+- Use local mocked data and local UI state.
+
+REQUIRED ROUTE:
+
+/day/12
+
+CONTEXT:
+
+ABTalks is a 60-day coding challenge for Indian college students.
+
+Each day, students:
+1. Choose/build a small project or feature.
+2. Submit a GitHub repository/commit as proof of work.
+3. Share a LinkedIn post as proof.
+4. Maintain their learning streak.
+
+The Challenge Day screen is the complete experience for one challenge day.
+
+Build a polished Day 12 experience that makes the student understand exactly what they need to do and how to submit it.
+
+PRIMARY VIEWPORT:
+
+The judges will automatically capture screenshots at 390px width.
+
+Design mobile-first and optimize carefully for 390px.
+
+REQUIRED CONTENT:
+
+1. Day header
+- Clearly show "Day 12 of 60"
+- Show the challenge title
+- Show the student's current progress/streak context
+- Provide an easy way to return to the Dashboard
+
+2. Today's task
+Clearly explain:
+- What the student needs to build
+- The goal of the task
+- What a successful submission should contain
+
+Make the task realistic and specific rather than generic filler text.
+
+3. Build guidance
+Include a concise checklist or guidance section explaining what the student should complete.
+
+For example:
+- Build the required feature
+- Test it
+- Commit the work
+- Share proof
+
+Keep the information scannable on mobile.
+
+4. GitHub proof submission
+Create a clear submission area for:
+- GitHub repository URL
+- GitHub commit URL or commit reference
+
+Use input fields with realistic placeholder/example text.
+
+5. LinkedIn proof submission
+Create a clear input for:
+- LinkedIn post URL
+
+Explain briefly why the student submits this proof.
+
+6. Submission action
+Provide a prominent "Submit Day 12" or equivalent CTA.
+
+The interaction should feel real.
+
+When the student submits:
+- Validate required fields.
+- Show an appropriate success state if the required information is valid.
+- Do not send anything to a real API.
+- Use local/mock state only.
+- Clearly communicate that the day has been submitted successfully.
+- Prevent confusing duplicate submission behavior.
+
+7. Submission status
+The interface should visually communicate whether the day is:
+- Not submitted
+- Ready to submit
+- Successfully submitted
+
+Use sensible mocked/local state.
+
+8. Streak motivation
+Include a small motivational element explaining what completing Day 12 means for the student's streak/progress.
+
+Do not make it overly gamified.
+
+9. Navigation
+Provide working navigation:
+- Back to `/dashboard`
+- Appropriate continuation/action after submission where useful
+
+PRODUCT THINKING:
+
+The page should answer these questions immediately:
+
+"What do I have to build?"
+"What counts as proof?"
+"Where do I submit my GitHub proof?"
+"Where do I submit my LinkedIn proof?"
+"Did my submission succeed?"
+
+Make these priorities obvious.
+
+DESIGN:
+
+- Mobile-first
+- Excellent 390px experience
+- Consistent with the Landing Page and Dashboard
+- Premium but approachable
+- Strong typography hierarchy
+- Clear spacing
+- Comfortable tap targets
+- Accessible contrast
+- Clear form states
+- Clear success feedback
+- Avoid excessive cards
+- Avoid generic form/dashboard templates
+- Avoid unnecessary complexity
+- Make the experience feel competition-ready
+
+FORM VALIDATION:
+
+At minimum:
+- GitHub repository URL is required.
+- GitHub commit URL/reference is required.
+- LinkedIn post URL is required.
+
+Show helpful validation feedback.
+
+Do not require actual URL verification through external services.
+
+MOCK DATA:
+
+Use local mock data only.
+
+Do not connect to:
+- GitHub API
+- LinkedIn API
+- Authentication services
+- Database
+
+RESPONSIVE REQUIREMENTS:
+
+- Optimize for 390px first.
+- No horizontal overflow.
+- Inputs and buttons must fit comfortably.
+- Form controls must be easy to tap.
+- Make the layout responsive for larger screens.
+
+IMPORTANT ROUTING:
+
+The Dashboard's existing Today's Task CTA should continue to navigate to:
+
+/day/12
+
+The Day 12 page should provide a working way back to:
+
+/dashboard
+
+AFTER IMPLEMENTATION:
+
+1. Run the application.
+2. Test `/day/12`.
+3. Test it at approximately 390px width.
+4. Check for horizontal overflow.
+5. Test form validation.
+6. Test the successful submission state using mocked/local state.
+7. Test navigation to `/dashboard`.
+8. Test that `/` and `/dashboard` still work.
+9. Fix all compilation/runtime errors.
+10. Do not unnecessarily modify unrelated files.
+
+At the end, briefly report:
+- Files changed
+- Challenge Day features implemented
+- Form validation implemented
+- Submission success state implemented
+- Whether `/day/12` works at 390px
+- Any issues remaining
+
+Do not rebuild the Landing Page or Dashboard in this task.
+
+**Result:**
+- Challenge Day `/day/12` created
+- Day 12 task and guidance added
+- GitHub repository proof field added
+- GitHub commit proof field added
+- LinkedIn proof field added
+- Form validation added
+- Mock submission success state added
+- Dashboard navigation tested
+- Responsive layout tested at 390px

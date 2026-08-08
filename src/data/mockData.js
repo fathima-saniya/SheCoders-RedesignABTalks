@@ -10,6 +10,18 @@ export const todaysTask = {
   day: 12, title: 'Tell your learning story', duration: '15 min', category: 'Personal brand', description: 'Turn one recent learning moment into a concise post outline.', status: 'available',
 }
 
+export const day12Brief = {
+  goal: 'Create a short portfolio case-study outline for a feature you have already built this month.',
+  prompt: 'Pick one feature, explain the problem it solves, and show one decision you made while building it. Keep it honest, specific, and useful to someone reading your work for the first time.',
+  checklist: [
+    'Write a 3-part outline: problem, your approach, and the result.',
+    'Add the outline or a supporting update to your project repository.',
+    'Test any linked page or demo before committing your work.',
+    'Share one learning takeaway in a LinkedIn post.',
+  ],
+  successCriteria: ['A repository link with today’s work', 'A commit URL or commit reference', 'A public LinkedIn post reflecting on the build'],
+}
+
 export const achievements = [
   { id: 'first-step', title: 'First Step', description: 'Completed your first challenge', earned: true },
   { id: 'week-one', title: 'Week One', description: 'Stayed consistent for 7 days', earned: true },

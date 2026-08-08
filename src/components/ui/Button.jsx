@@ -7,7 +7,7 @@ const styles = {
 }
 
 export function Button({ variant = 'primary', className = '', to, children, ...props }) {
-  const base = `inline-flex min-h-11 items-center justify-center gap-2 rounded-xl px-4 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 ${styles[variant]} ${className}`
+  const base = `inline-flex min-h-11 items-center justify-center gap-2 rounded-xl px-4 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 ${styles[variant]} ${className}`
   if (to) return <Link to={to} className={base}>{children}</Link>
   return <button className={base} {...props}>{children}</button>
 }
