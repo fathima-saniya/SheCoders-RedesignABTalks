@@ -3,8 +3,6 @@
 ## AI Tools Used
 - Codex
 
-## Codex
-
 ### Prompt 1 — Project Foundation
 
 We are building the "ABTalks Reimagined" project for a vibe-coding hackathon.
@@ -566,3 +564,112 @@ Do not rebuild the Landing Page or Dashboard in this task.
 - Mock submission success state added
 - Dashboard navigation tested
 - Responsive layout tested at 390px
+
+## Antigravity
+
+### Prompt 1 — Mobile UX Audit
+Inspect the existing ABTalks project only. Do not edit any files.
+
+Check mobile UX at about 390px for:
+/
+ /dashboard
+/day/12
+
+Look only for genuine problems:
+- overflow or cutoff
+- small tap targets
+- text wrapping/readability
+- cards exceeding the viewport
+- header/navigation issues
+- mobile spacing/alignment
+
+Do not redesign or add features.
+Do not modify PROMPTS.md or package-lock.json.
+
+Report:
+1. Issues found
+2. Files affected
+3. Smallest fix for each
+
+Stop. Make no changes.
+
+**Result:** Completed a mobile UX audit of the three required routes and identified genuine mobile usability issues for targeted fixes.
+
+### Prompt 2 — Mobile UX Fixes
+Apply only these 3 small mobile UX fixes identified in the audit.
+
+1. src/components/layout/AppShell.jsx
+- Remove the header "Start now" button's min-h-9 so the existing Button default 44px height applies.
+- Make the header navigation link at least 44px tall using min-h-11 inline-flex items-center.
+
+2. src/pages/LandingPage.jsx
+- Reduce the mobile hero heading size so it wraps cleanly at about 390px.
+- Keep the existing desktop size unchanged.
+
+3. src/pages/ChallengeDayPage.jsx
+- Shorten only the long commit URL placeholder so it does not get clipped on a 390px screen.
+
+Do not redesign anything.
+Do not add features.
+Do not change functionality.
+Do not modify PROMPTS.md.
+Do not modify package-lock.json.
+Do not modify DashboardPage.jsx.
+Do not modify footer links.
+Do not modify any other files.
+Do not commit or push.
+
+After editing, show:
+- files changed
+- exact changes made
+- concise diff
+
+**Result:** Implemented the three targeted mobile UX fixes while preserving the existing design and functionality.
+
+### Prompt 3 — Remaining Mobile UX Fixes
+Continue the mobile UX audit fixes. Do not change the visual design unnecessarily.
+
+Implement the two remaining fixes from the audit:
+
+1. In src/pages/LandingPage.jsx:
+   - Find the footer navigation links: "The challenge", "How it works", and "Start now".
+   - Give the footer links an accessible mobile tap target of at least 44px height, preferably using min-h-11 and flex items-center where appropriate.
+   - Replace the footer "Start now" <a href="/dashboard"> with React Router <Link to="/dashboard">.
+   - Import Link from react-router-dom if it is not already imported.
+   - Preserve the existing styling and layout.
+
+2. In src/pages/DashboardPage.jsx:
+   - Find the "Back to ABTalks" link.
+   - Replace <a href="/"> with React Router <Link to="/">.
+   - Import Link from react-router-dom if it is not already imported.
+   - Preserve the existing styling.
+
+After making the changes:
+- Run npm run build.
+- Fix any build errors if they occur.
+- Do not modify package-lock.json unless genuinely required by the build.
+- Do not make unrelated changes.
+
+**Result:** Implemented the remaining mobile navigation and tap-target improvements and verified the project with a production build.
+
+## VS Code AI Chat
+
+### Prompt 1 — Day 12 Accessibility Improvement
+
+Inspect the existing "/day/12" proof-submission form.
+
+Make ONE small accessibility/usability improvement to these three fields:
+
+- GitHub repository URL
+- GitHub commit reference
+- LinkedIn post link
+
+Ensure the fields have clear accessible labels, unique "id" + "htmlFor", appropriate "name", appropriate input types ("url" for GitHub/LinkedIn URLs), and visible focus states.
+
+Preserve all existing styling, layout, functionality, routing, and form behavior.
+
+Do NOT redesign the page, change the theme, modify "/" or "/dashboard", add dependencies, or add features.
+
+Keep the changes minimal. Afterward, verify "/day/12" at approximately 390px with no horizontal overflow.
+
+**Result:** Added a minimal accessibility/usability improvement to the three Day 12 proof-submission fields while preserving the existing styling, layout, functionality, and routing.
