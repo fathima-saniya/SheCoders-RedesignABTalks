@@ -67,7 +67,8 @@ The website is designed to work smoothly across different screen sizes:
 </td>
     <td><img width="808" height="1600" alt="WhatsApp Image 2026-08-09 at 7 25 19 PM (2)" src="https://github.com/user-attachments/assets/28d87eec-f759-4351-afbb-0b9dd3cdc6e3" />
 </td>
-<td><img width="753" height="1600" alt="WhatsApp Image 2026-08-09 at 7 25 19 PM (1)" src="https://github.com/user-attachments/assets/abc3f072-5805-4df7-8b5e-b35a96c5b64d" />
+<td><img width="803" height="1600" alt="WhatsApp Image 2026-08-09 at 7 25 20 PM (1)" src="https://github.com/user-attachments/assets/58a28d2d-b112-4aa0-8e81-0bf7a2c345cb" />
+
 
 </td>
   </tr>
