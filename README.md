@@ -1,4 +1,4 @@
-# She Coders – Redesign ABTalks
+# She Coders – ABTalks2.0
 
 A modern, student-focused redesign of the ABTalks 60-Day Coding Challenge platform, designed to make daily coding progress easier to track, understand, and maintain.
 
@@ -19,7 +19,7 @@ Our redesign focuses on creating a clean, engaging, and student-friendly experie
 * Track overall performance
 * Access the platform easily across devices
 
-## ✨ Key Features
+## ✨ Key Features:
 
 ### 🏠 Landing Page
 
