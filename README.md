@@ -4,7 +4,7 @@ A modern, student-focused redesign of the ABTalks 60-Day Coding Challenge platfo
 
 ## 🚀 Live Demo
 
-**Live Website:** YOUR_DEPLOYED_URL
+**Live Website:** https://abtalks20.vercel.app/
 
 ## 📌 Project Overview
 
@@ -27,6 +27,7 @@ Our redesign focuses on creating a clean, engaging, and student-friendly experie
 * Clear and engaging call-to-action
 * Overview of the challenge
 * Student-focused user interface
+<img width="1901" height="866" alt="Screenshot 2026-08-09 191843" src="https://github.com/user-attachments/assets/ba034111-b6cd-428d-b37a-d0d5dfbdbb38" />
 
 ### 📊 Student Dashboard
 
@@ -35,6 +36,8 @@ Our redesign focuses on creating a clean, engaging, and student-friendly experie
 * Overall challenge progress
 * Completion percentage
 * Student performance and standing
+<img width="1900" height="862" alt="Screenshot 2026-08-09 192913" src="https://github.com/user-attachments/assets/0b70a0c2-44a8-49f8-9606-bdc3d74a8c48" />
+
 
 ### 📝 Daily Challenge
 
@@ -43,6 +46,7 @@ Our redesign focuses on creating a clean, engaging, and student-friendly experie
 * Submit GitHub commit proof
 * Submit LinkedIn post proof
 * Monitor daily progress
+<img width="1897" height="867" alt="Screenshot 2026-08-09 191933" src="https://github.com/user-attachments/assets/52e5f0a8-87ce-4521-be7c-5507ef022f47" />
 
 ### 📱 Responsive Design
 
@@ -51,6 +55,24 @@ The website is designed to work smoothly across different screen sizes:
 * 📱 Mobile
 * 💻 Desktop
 * 📟 Tablet
+
+
+
+mobile view:
+<img width="755" height="1600" alt="WhatsApp Image 2026-08-09 at 7 25 17 PM" src="https://github.com/user-attachments/assets/9f958ca6-4bbe-4a5a-afb3-3ef188cb2a44" />
+<img width="938" height="1600" alt="WhatsApp Image 2026-08-09 at 7 25 18 PM" src="https://github.com/user-attachments/assets/071ee2e3-0e3b-443e-9538-301f881ad05d" />
+<img width="753" height="1600" alt="WhatsApp Image 2026-08-09 at 7 25 18 PM (1)" src="https://github.com/user-attachments/assets/3a4571f1-9975-4af8-8346-d58ab96ee12a" />
+<img width="803" height="1600" alt="WhatsApp Image 2026-08-09 at 7 25 18 PM (2)" src="https://github.com/user-attachments/assets/201ab1b5-e8c2-4d1b-b06b-d5823d2d9f13" />
+<img width="818" height="1600" alt="WhatsApp Image 2026-08-09 at 7 25 19 PM" src="https://github.com/user-attachments/assets/988dc9de-5b17-409a-8b3d-2c6c817af1e0" />
+<img width="753" height="1600" alt="WhatsApp Image 2026-08-09 at 7 25 19 PM (1)" src="https://github.com/user-attachments/assets/a0320d4c-432f-45b6-928a-7e8ef4cde2ec" />
+<img width="808" height="1600" alt="WhatsApp Image 2026-08-09 at 7 25 19 PM (2)" src="https://github.com/user-attachments/assets/b877faee-4790-43f7-87f9-19999ec63ead" />
+<img width="812" height="1600" alt="WhatsApp Image 2026-08-09 at 7 25 20 PM" src="https://github.com/user-attachments/assets/b5fab5b3-a3f2-49b7-a57e-2175b387f0b3" />
+<img width="803" height="1600" alt="WhatsApp Image 2026-08-09 at 7 25 20 PM (1)" src="https://github.com/user-attachments/assets/77889fab-4b7c-4ce7-b6dd-77380e5710de" />
+
+
+
+
+
 
 ## 🛠️ Tech Stack
 
@@ -83,8 +105,10 @@ AI-assisted development tools were used during the development of this project.
 
 Tools used:
 
-* ChatGPT
+* Codex
+* Antigravity
 * Cursor
+* ChatGPT
 
 AI assistance was used for UI development, code generation, debugging, development guidance, and refinement.
 
@@ -95,13 +119,13 @@ Detailed AI prompts and interactions are documented in `PROMPTS.md`.
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/fathima-saniya/SheCoders-ABTalks2.0
 ```
 
 ### 2. Navigate into the project
 
 ```bash
-cd YOUR_PROJECT_FOLDER_NAME
+cd SheCoders-ABTalks2.0
 ```
 
 ### 3. Install dependencies
