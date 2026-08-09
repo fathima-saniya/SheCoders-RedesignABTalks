@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight, Award, CheckCircle2, ChevronRight, Flame, GitCommitHorizontal, Medal, Share2, ShieldCheck } from 'lucide-react'
 import { achievements, challengeProgress, currentStreak, recentActivity, streakCareMessage, studentProfile, studentStanding, todaysTask } from '../data/mockData'
@@ -30,6 +31,6 @@ export function DashboardPage() {
     <section className="mt-9"><SectionTitle eyebrow="Your proof" title="Recent activity" /><div className="divide-y divide-stone-100 rounded-[1.5rem] bg-white px-5 shadow-sm ring-1 ring-black/5">{recentActivity.map((activity) => <article key={activity.id} className="flex gap-3 py-4"><span className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-xl bg-brand/10 text-brand"><GitCommitHorizontal size={17} /></span><div className="min-w-0 flex-1"><p className="text-sm font-semibold leading-5">{activity.title}</p><div className="mt-1.5 flex items-center gap-2 text-xs text-muted"><span>{activity.date}</span>{activity.proof.map((item) => <span key={item} className="inline-flex items-center gap-1"><span className="text-brand">{item === 'GitHub' ? <GitCommitHorizontal size={12} /> : <Share2 size={12} />}</span>{item}</span>)}</div></div></article>)}</div></section>
 
     <section className="mt-7 rounded-2xl border border-dashed border-stone-300 bg-white/60 p-4"><div className="flex gap-3"><span className="grid size-9 shrink-0 place-items-center rounded-xl bg-stone-100 text-muted"><ShieldCheck size={18} /></span><div><p className="text-sm font-bold">Streak care, not streak pressure</p><p className="mt-1 text-sm leading-5 text-muted">{streakCareMessage}</p></div></div></section>
-    <a href="/" className="mt-7 inline-flex min-h-11 items-center gap-1 text-sm font-semibold text-muted hover:text-ink">Back to ABTalks <ChevronRight size={16} /></a>
+    <Link to="/" className="mt-7 inline-flex min-h-11 items-center gap-1 text-sm font-semibold text-muted hover:text-ink">Back to ABTalks <ChevronRight size={16} /></Link>
   </div>
 }

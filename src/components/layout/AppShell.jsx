@@ -16,7 +16,7 @@ export function AppShell({ children }) {
         <nav aria-label="Main navigation" className="flex items-center gap-1.5">
           {pathname === '/' && <a href="#how-it-works" className="hidden rounded-lg px-3 py-2 text-sm font-medium text-muted hover:text-ink sm:inline">How it works</a>}
           <NavLink to="/dashboard" active={pathname === '/dashboard'}>Progress</NavLink>
-          {pathname === '/' && <Button to="/dashboard" className="min-h-9 rounded-lg px-3 text-xs sm:px-4 sm:text-sm">Start now <ArrowUpRight size={15} /></Button>}
+          {pathname === '/' && <Button to="/dashboard" className="rounded-lg px-3 text-xs sm:px-4 sm:text-sm">Start now <ArrowUpRight size={15} /></Button>}
         </nav>
       </header>
       <motion.main
@@ -33,5 +33,5 @@ export function AppShell({ children }) {
 }
 
 function NavLink({ to, active, children }) {
-  return <Link to={to} className={`rounded-lg px-3 py-2 text-sm font-medium ${active ? 'bg-ink text-white' : 'text-muted hover:text-ink'}`}>{children}</Link>
+  return <Link to={to} className={`min-h-11 inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium ${active ? 'bg-ink text-white' : 'text-muted hover:text-ink'}`}>{children}</Link>
 }

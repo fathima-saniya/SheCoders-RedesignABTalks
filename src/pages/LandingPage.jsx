@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { ArrowRight, Check, ChevronRight, Code2, Flame, GitBranch, Rocket, Share2, Sparkles, Trophy, UsersRound } from 'lucide-react'
 import { Button } from '../components/ui/Button'
 import { Badge } from '../components/ui/Badge'
@@ -14,7 +15,7 @@ export function LandingPage() {
       <div className="pointer-events-none absolute -right-24 top-6 size-64 rounded-full border-[28px] border-brand/30" />
       <div className="pointer-events-none absolute -bottom-20 left-1/3 size-48 rounded-full bg-amber-300/10 blur-3xl" />
       <motion.div variants={fadeUp} className="relative"><Badge tone="accent"><Sparkles size={13} className="mr-1" /> A 60-day build habit for students</Badge></motion.div>
-      <motion.h1 variants={fadeUp} className="relative mt-5 max-w-3xl text-[2.65rem] font-bold leading-[0.98] tracking-[-0.055em] sm:text-6xl">Build after college.<br /><span className="text-amber-200">Be seen before placement.</span></motion.h1>
+      <motion.h1 variants={fadeUp} className="relative mt-5 max-w-3xl text-3xl font-bold leading-tight tracking-tight sm:text-6xl sm:leading-[0.98] sm:tracking-[-0.055em]">Build after college.<br /><span className="text-amber-200">Be seen before placement.</span></motion.h1>
       <motion.p variants={fadeUp} className="relative mt-6 max-w-xl text-base leading-7 text-white/70 sm:text-lg">ABTalks is a 60-day coding challenge for Indian college students. Make something small every day, publish the proof, and turn late-night effort into a career story.</motion.p>
       <motion.div variants={fadeUp} className="relative mt-7 flex flex-col gap-3 sm:flex-row"><Button to="/dashboard" className="w-full sm:w-auto">Start your 60 days <ArrowRight size={17} /></Button><a href="#how-it-works" className="inline-flex min-h-11 items-center justify-center rounded-xl px-4 text-sm font-semibold text-white/85 ring-1 ring-white/20 hover:bg-white/10">See how it works <ChevronRight size={17} /></a></motion.div>
       <motion.div variants={fadeUp} className="relative mt-9 flex items-center gap-3 text-sm text-white/65"><div className="flex -space-x-2">{landingCommunity.students.map((student) => <span key={student.name} className={`grid size-7 place-items-center rounded-full border-2 border-ink text-[9px] font-bold text-white ${student.color}`}>{student.initials}</span>)}</div><span>Joined by {landingCommunity.activeStudents.toLocaleString('en-IN')} builders across India</span></motion.div>
@@ -42,7 +43,7 @@ export function LandingPage() {
 
     <section className="py-16 sm:py-24"><div className="overflow-hidden rounded-[2rem] bg-brand p-6 text-white sm:p-10"><div className="grid gap-8 sm:grid-cols-2 sm:items-center"><div><p className="text-sm font-bold uppercase tracking-[0.15em] text-white/70">Your streak is waiting</p><h2 className="mt-3 text-3xl font-bold leading-tight tracking-tight">Sixty small proofs can change how you see yourself.</h2><p className="mt-4 leading-7 text-white/80">Begin with one commit tonight. Tomorrow, you’ll have a reason to come back.</p><Button to="/dashboard" variant="secondary" className="mt-6">Begin day one <ArrowRight size={17} /></Button></div><StreakVisual /></div></div></section>
 
-    <footer className="border-t border-stone-200 py-8 text-sm text-muted"><div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between"><div className="flex items-center gap-2 font-bold text-ink"><span className="grid size-7 place-items-center rounded-lg bg-ink text-xs text-white">A</span> ABTalks Reimagined</div><div className="flex gap-5"><a className="hover:text-ink" href="#how-it-works">The challenge</a><a className="hover:text-ink" href="#how-it-works">How it works</a><a className="hover:text-ink" href="/dashboard">Start now</a></div></div></footer>
+    <footer className="border-t border-stone-200 py-8 text-sm text-muted"><div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between"><div className="flex items-center gap-2 font-bold text-ink"><span className="grid size-7 place-items-center rounded-lg bg-ink text-xs text-white">A</span> ABTalks Reimagined</div><div className="flex gap-5"><a className="inline-flex min-h-11 items-center hover:text-ink" href="#how-it-works">The challenge</a><a className="inline-flex min-h-11 items-center hover:text-ink" href="#how-it-works">How it works</a><Link className="inline-flex min-h-11 items-center hover:text-ink" to="/dashboard">Start now</Link></div></div></footer>
   </div>
 }
 
