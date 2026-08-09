@@ -97,9 +97,11 @@ The redesign aims to encourage consistency, make progress visible, and provide s
 
 ### She Coders:
 
-Fathima Saniya
-Fathima Nooha
-Aasiya Hadiya
+*Fathima Saniya
+
+*Fathima Nooha
+
+*Aasiya Hadiya
 
 ## 🤖 AI Tools Used
 
